@@ -1,0 +1,18 @@
+﻿@model ML.Login
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+@using (Html.BeginForm("Form", "Login", FormMethod.Post)){
+
+    @Html.LabelFor(model => model.Email)
+    @Html.TextBoxFor(model => model.Email)
+
+    @Html.LabelFor(model => model.Password)
+    @Html.TextBoxFor(model => model.Password)
+
+    <button class="btn btn-success" type="submit">Iniciar Sesion</button>
+}
